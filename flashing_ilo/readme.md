@@ -32,7 +32,7 @@ There are different ways to flash the ILO. This is how I did it - all work was d
 10. Change to flash directory in root's home and flash the ROM: cd flash; **./flash_ilo4 --direct**
 11. **WAIT (!) at least 3 minutes after flashing** is done. The fans will spin down and later spin up!
 12. Shutdown the server
-13. Unplug from power
+13. **Unplug from power**
 14. **Switch dip S1 back to 0** (iLO 2 security is enabled)
 15. Close server
 16. Plug the server to power and boot Linux again
