@@ -56,7 +56,7 @@ Now you can connect to iLO by ssh if you already configured the network settings
 
 **Due to a bug only the first connection and first command to iLO are shown. ALL commands are executed and take effect but the following commands have an empty status line.**
 
-My first command on my HP Proliant DL360 Gen9 was as iLO user 'fan' (you need to add this user in iLO configuration):** fan info**
+My first command on my HP Proliant DL360 Gen9 was as iLO user 'fan' (you need to add this user in iLO configuration):**fan info**
 
 ```
 root:~# ssh -o KexAlgorithms=+diffie-hellman-group14-sha1 -oHostKeyAlgorithms=+ssh-dss fan@192.168.1.3
