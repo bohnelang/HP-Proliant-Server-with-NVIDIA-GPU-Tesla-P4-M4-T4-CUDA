@@ -70,7 +70,7 @@ Then run **update-initramfs -u**
 and **reboot**
 
 **Install recommended further Linux packages**
-
+```
 - **NVIDIA**
 -- **GPUstat** - pretty nvidia device monitor
 -- **nvtop** - Interactive NVIDIA GPU process monitor
@@ -90,10 +90,10 @@ and **reboot**
 -- **stress** - tool to impose load on and stress test a computer system
 -- **GPU-burn** - Multi-GPU CUDA stress test from https://github.com/wilicc/GPU-burn
 
-- **Additional benchmark programs **
+- **Additional benchmark programs**
 -- OpenCL-Benchmark (https://github.com/ProjectPhysX/OpenCL-Benchmark)
 -- Geekbench 6 from https://www.geekbench.com/download/ (wget https://cdn.geekbench.com/Geekbench-6.2.1-Linux.tar.gz; tar xf Geekbench-6.2.1-Linux.tar.gz; cd Geekbench-6.2.1-Linux; ./geekbench6 or ./geekbench6  --GPU OpenC)
-
+```
 
 
 ### Fan control scripts: ilofancontrol & ilofancontrol.service
