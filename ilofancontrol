@@ -1,0 +1,145 @@
+#!/bin/bash
+#
+
+
+ILOIP="192.168.1.3"
+USERNAME="fan"
+PASSWORD='topsecret'
+
+
+if ! test "$1" = ""
+then
+        LOG=1
+else
+        LOG=0
+fi
+
+
+#
+# Default Settings
+#
+
+# Temp in celsius
+MINTEMP=40
+MAXTEMP=90
+
+# Fan in percentage
+MINFAN=18
+MAXFAN=99
+STEP=5
+
+LP=/var/run/fastfan
+
+ALLFANS="0 1 2 3 4 5 6"
+
+
+while :
+do
+
+echo
+#
+# Fetch CPU temperature
+#
+TEMP=0
+N=0
+if test $LOG -eq 1; then echo "Load: $(cat /proc/loadavg | awk '{print $1, $2}' ) "; fi
+while test -e /sys/class/thermal/thermal_zone$N/temp
+do
+        T1=$(echo "scale=0;$(cat /sys/class/thermal/thermal_zone$N/temp)/1000" | bc -l)
+        if test $T1 -gt $TEMP
+        if test $LOG -eq 1; then echo "CPU temp: $T1"; fi
+        then
+                TEMP=$T1
+        fi
+        let N=$N+1
+done
+
+
+#
+# Fetch NVIDIA GPU temperature
+#
+if ! test "$(which nvidia-smi)" = ""
+then
+        if test "$(nvidia-smi 2>&1 | grep failed)" = ""
+        then
+                while read GPUTEMP
+                do
+                        if test $LOG -eq 1; then echo "GPU temp: $GPUTEMP"; fi
+                        if test $GPUTEMP -gt $TEMP
+                        then
+                                let TEMP=GPUTEMP
+                        fi
+                done < <(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)
+        else
+                echo "Cannot load nvidia driver"
+        fi
+fi
+
+if test $LOG -eq 1; then echo "TOP temp: $TEMP"; fi
+
+#
+if test $TEMP -gt $MAXTEMP
+then
+        TEMP=$MAXTEMP
+fi
+
+if test  $TEMP -lt $MINTEMP
+then
+        TEMP=$MINTEMP
+fi
+
+
+#
+# Calculation of percentage fan performance
+#
+
+#echo " $MINFAN + ( ($TEMP - $MINTEMP) * (  ($MAXFAN - $MINFAN)  / ($MAXTEMP - $MINTEMP) ) "
+
+let W0=$(echo "scale=0;$TEMP-$MINTEMP"| bc -l)
+let W1=$(echo "scale=0;$MAXFAN-$MINFAN" | bc -l)
+let W2=$(echo "scale=0;$MAXTEMP-$MINTEMP" | bc -l)
+
+let W4=$(echo "scale=0;$W0*$W1/$W2"| bc -l)
+
+
+FAN=$(echo "scale=0;$MINFAN+$W4 " | bc -l)
+if test $LOG -eq 1; then echo "Cal $FAN %"; echo; fi
+
+#
+# Kind of cache for fan control
+#
+if ! test -e $LP
+then
+        echo "1" > $LP
+fi
+
+LASTFAN=$(cat $LP)
+
+TD=$(echo "scale=0; $FAN - $LASTFAN " | bc -l)
+
+if test $TD -lt 0
+then
+        TD=$(echo "scale=0; -1 * $TD " | bc -l)
+fi
+
+if test $TD -gt $STEP
+then
+        if test $LOG -eq 1; then echo "Setting $FAN to $ALLFANS"; fi
+
+        echo "$FAN" > $LP
+
+        FAN=$(echo "scale=0;254*$FAN/100" | bc -l)
+        if test $LOG -eq 1; then echo "Cal Setting values $FAN"; fi
+
+
+        for I in $ALLFANS
+        do
+                sshpass -p "$PASSWORD" ssh -oKexAlgorithms=+diffie-hellman-group14-sha1,diffie-hellman-group1-sha1 -oHostKeyAlgorithms=ssh-rsa,ssh-dss $USERNAME@$ILOIP "fan p $I min $FAN" > /dev/null
+
+        done
+fi
+
+if test $LOG -eq 0; then break; fi
+
+done
+exit 0

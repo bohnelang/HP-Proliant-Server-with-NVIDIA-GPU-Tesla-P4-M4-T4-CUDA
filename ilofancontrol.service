@@ -1,0 +1,27 @@
+[Unit]
+Description=IloFanControl
+Documentation=https://github.com/bohnelang/
+PartOf=Network.target
+After=local-fs.target network-online.target
+Wants=local-fs.target network-online.target
+
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/ilofancontrol/ilofancontrol
+Restart=on-success
+RestartSec=3
+
+[Install]
+WantedBy=default.target
+Alias=ilofancontrol.service
+
+# Installation:
+#
+# Edit this file to /usr/local/bin/ilofancontrol/ilofancontrol.service
+# ln -s /usr/local/bin/ilofancontrol/ilofancontrol.service /lib/systemd/system/ilofancontrol.service
+#
+# systemctl daemon-reload
+# systemctl enable ilofancontrol.service
+# systemctl start ilofancontrol.service
+# systemctl status ilofancontrol.service
