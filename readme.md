@@ -25,7 +25,7 @@ You need the following hardware:
 - Some **duct tape** 
 
 ![Riser Card](images/proliant_gen9_riser_card_b_400.jpg)
-**HP Proliant Riser card **
+**HP Proliant Riser card**
 
 ![Duct tape cover](images/server_cover_400.jpg)
 **Covered holes with duct tape**
