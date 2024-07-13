@@ -72,27 +72,27 @@ and **reboot**
 **Install recommended further Linux packages**
 
 - **NVIDIA**
-- **GPUstat** - pretty nvidia device monitor
-- **nvtop** - Interactive NVIDIA GPU process monitor
-- **nvidia-opencl-dev** - NVIDIA OpenCL development files
-- **nvidia-cuda-dev** - NVIDIA CUDA development files
-- **nvidia-cuda-toolkit-gcc** - NVIDIA CUDA development toolkit (GCC compatibility)
+- > **GPUstat** - pretty nvidia device monitor
+- > **nvtop** - Interactive NVIDIA GPU process monitor
+- > **nvidia-opencl-dev** - NVIDIA OpenCL development files
+- > **nvidia-cuda-dev** - NVIDIA CUDA development files
+- > **nvidia-cuda-toolkit-gcc** - NVIDIA CUDA development toolkit (GCC compatibility)
 
 - **Sensor programs**
-- **freeipmi-tools** - GNU implementation of the IPMI protocol - tools (apt-cache search ipmi-sensors)
-- **lm-sensors** - utilities to read temperature/voltage/fan sensors
-- **htop** - interactive processes viewer
+- > **freeipmi-tools** - GNU implementation of the IPMI protocol - tools (apt-cache search ipmi-sensors)
+- > **lm-sensors** - utilities to read temperature/voltage/fan sensors
+- > **htop** - interactive processes viewer
 
 - **Other**
-- **net-tools** - NET-3 networking toolkit
+- > **net-tools** - NET-3 networking toolkit
 
 - **Stress programms**
-- **stress** - tool to impose load on and stress test a computer system
-- **GPU-burn** - Multi-GPU CUDA stress test from https://github.com/wilicc/GPU-burn
+- > **stress** - tool to impose load on and stress test a computer system
+- > **GPU-burn** - Multi-GPU CUDA stress test from https://github.com/wilicc/GPU-burn
 
 - **Additional benchmark programs**
-- OpenCL-Benchmark (https://github.com/ProjectPhysX/OpenCL-Benchmark)
-- Geekbench 6 from https://www.geekbench.com/download/ (wget https://cdn.geekbench.com/Geekbench-6.2.1-Linux.tar.gz; tar xf Geekbench-6.2.1-Linux.tar.gz; cd Geekbench-6.2.1-Linux; ./geekbench6 or ./geekbench6  --GPU OpenC)
+- > OpenCL-Benchmark (https://github.com/ProjectPhysX/OpenCL-Benchmark)
+- > Geekbench 6 from https://www.geekbench.com/download/ (wget https://cdn.geekbench.com/Geekbench-6.2.1-Linux.tar.gz; tar xf Geekbench-6.2.1-Linux.tar.gz; cd Geekbench-6.2.1-Linux; ./geekbench6 or ./geekbench6  --GPU OpenC)
 
 
 
