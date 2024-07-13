@@ -7,7 +7,7 @@
 You can run passively cooled single slot sshpass Tesla GPU cards in a HP Proliant with a modified iLO (integrated Lights-Out) ROM that take care of the temperature control. First you need to flash a new modified iLO ROM. Then the Linux script 'ilofancontrol' can control the fan speed by ssh remote commands on the iLO system. A systemd script 'ilofancontrol.service' checks and regulates the fan speed dynamically according to the CPU und GPU temperature.
 
 ![HP Proliant Server DL360 Gen9 with two NVIDIA Tesla M4 GPU Cards](images/two_tesla_cards_proliant_gen9_dl360_800.jpg)
-**  HP Proliant DL360 Gen9 with two NVIDIA Tesla M4 GPU cards**
+**HP Proliant DL360 Gen9 with two NVIDIA Tesla M4 GPU cards**
 
 
 ## Introduction
