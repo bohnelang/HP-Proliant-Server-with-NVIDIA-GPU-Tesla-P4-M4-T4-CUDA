@@ -333,9 +333,8 @@ This project is a craft project, but in all it opens a nice way to run NVIDIA si
 ## Sources
 - https://github.com/kendallgoto/ilo4_unlock
 - https://github.com/That-Guy-Jack/HP-iLO-Fan-Control
--  https://www.reddit.com/r/homelab/comments/sx3ldo/hp_ilo4_v277_unlocked_access_to_fan_controls/
+- https://www.reddit.com/r/homelab/comments/sx3ldo/hp_ilo4_v277_unlocked_access_to_fan_controls/
 - https://www.reddit.com/r/homelab/comments/hix44v/silence_of_the_fans_pt_2_hp_ilo_4_273_now_with/
 - https://www.reddit.com/user/phoenixdev/
-- 
-https://www.reddit.com/r/homelab/comments/n42cxv/silence_of_the_fans_pt_2_hp_ilo_4_273_now_with/
+- https://www.reddit.com/r/homelab/comments/n42cxv/silence_of_the_fans_pt_2_hp_ilo_4_273_now_with/
 - https://www.reddit.com/r/homelab/comments/di3vrk/silence_of_the_fans_controlling_hp_server_fans/
