@@ -40,7 +40,7 @@ There are different ways to flash the ILO. This is how I did it - all work was d
 
 
 ### Images
-![DIP switch](images/switch200.jpg) 
+![DIP switch](images/switch400.jpg) 
 **DIP switch on mainboard. See image on the inner cover.**
 
 ![Switch Gen9](images/ilo_switch_gen9_400.jpg) 
