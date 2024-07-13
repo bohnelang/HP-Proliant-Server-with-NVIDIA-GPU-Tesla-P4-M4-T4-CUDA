@@ -64,7 +64,7 @@ blacklist nvidiafb
 blacklist rivatv
 blacklist nouveau
 options nouveau modeset=0
-options nvidia NVreg_EnableGPUFirmware=0**
+options nvidia NVreg_EnableGPUFirmware=0
 ```
 Then run **update-initramfs -u**
 and **reboot**
