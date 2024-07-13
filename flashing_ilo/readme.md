@@ -25,7 +25,7 @@ There are different ways to flash the ILO. This is how I did it - all work was d
 4. Shutdown the server
 4. Unplug the server from power
 5. Open server
-6. **Switch dip S1 to 1  (maintenance mode, iLO security is disabled) **
+6. **Switch dip S1 to 1  (maintenance mode, iLO security is disabled)**
 7. Plug the server to power and boot Linux 
 8. Maybe you need to stop already installed HP services: /etc/init.d/hp-ams stop; /etc/init.d/hp-health stop; /etc/init.d/hp-snmp-agents stop
 9. **modprobe -r hpilo**
