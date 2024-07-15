@@ -46,8 +46,8 @@ if test $LOG -eq 1; then echo "Load: $(cat /proc/loadavg | awk '{print $1, $2}' 
 while test -e /sys/class/thermal/thermal_zone$N/temp
 do
         T1=$(echo "scale=0;$(cat /sys/class/thermal/thermal_zone$N/temp)/1000" | bc -l)
-        if test $T1 -gt $TEMP
         if test $LOG -eq 1; then echo "CPU temp: $T1"; fi
+        if test $T1 -gt $TEMP
         then
                 TEMP=$T1
         fi
