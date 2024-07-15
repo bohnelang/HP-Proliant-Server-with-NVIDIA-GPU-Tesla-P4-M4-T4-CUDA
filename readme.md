@@ -335,6 +335,10 @@ This project is a craft project, but in all it opens a nice way to run NVIDIA si
 - https://github.com/That-Guy-Jack/HP-iLO-Fan-Control
 - https://www.reddit.com/r/homelab/comments/sx3ldo/hp_ilo4_v277_unlocked_access_to_fan_controls/
 - https://www.reddit.com/r/homelab/comments/hix44v/silence_of_the_fans_pt_2_hp_ilo_4_273_now_with/
+- https://tkrn.io/u/tkrn/ilo4/
 - https://www.reddit.com/user/phoenixdev/
 - https://www.reddit.com/r/homelab/comments/n42cxv/silence_of_the_fans_pt_2_hp_ilo_4_273_now_with/
 - https://www.reddit.com/r/homelab/comments/di3vrk/silence_of_the_fans_controlling_hp_server_fans/
+- https://pingtool.org/latest-hp-ilo-firmwares/
+- https://downloads.hpe.com/pub/softlib2/software1/sc-linux-fw-ilo/p192122427/v188589/CP046020.scexe
+
