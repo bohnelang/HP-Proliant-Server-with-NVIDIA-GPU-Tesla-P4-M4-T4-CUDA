@@ -27,7 +27,7 @@ MAXTEMP=95
 # Fan in percentage
 MINFAN=18
 MAXFAN=99
-STEP=5
+STEP=4
 
 LP=/var/run/fastfan
 
