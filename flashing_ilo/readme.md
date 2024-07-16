@@ -1,5 +1,5 @@
 # A craft project: Building a small GPU server with a HP Proliant and passively cooled NVIDIA Tesla cards like M4, P4 or T4
-##  Flashing iLO
+##  Flashing iLO ROM
 
 ### Legal (from Kendall https://github.com/kendallgoto/ilo4_unlock)
 There is risk for potential damage to your system when utilizing this code. If an error occurs during flashing, or you end up flashing corrupted firmware, the iLO will not be able to recover itself. The iLO's flash chip cannot be programmed on-board, and must be fully desoldered and reprogrammed to recover the functionality. Additionally, utilizing the included new features may cause your server to overheat or otherwise suffer damage. Do not proceed with installing this firmware if you don't know what you're doing. You have been warned. There is no warranty for this code nor will I be responsible for any damage you cause.
