@@ -92,7 +92,7 @@ and **reboot**
 
 - **Additional benchmark programs**
 - > OpenCL-Benchmark (https://github.com/ProjectPhysX/OpenCL-Benchmark)
-- > Geekbench 6 from https://www.geekbench.com/download/ (wget https://cdn.geekbench.com/Geekbench-6.2.1-Linux.tar.gz; tar xf Geekbench-6.2.1-Linux.tar.gz; cd Geekbench-6.2.1-Linux; ./geekbench6 or ./geekbench6  --GPU OpenC)
+- > Geekbench 6 from https://www.geekbench.com/download/ (wget https://cdn.geekbench.com/Geekbench-6.2.1-Linux.tar.gz; tar xf Geekbench-6.2.1-Linux.tar.gz; cd Geekbench-6.2.1-Linux; ./geekbench6 or ./geekbench6  --GPU )
 
 
 
