@@ -9,8 +9,7 @@ Wants=local-fs.target network-online.target
 [Service]
 Type=simple
 ExecStart=/usr/local/bin/ilofancontrol/ilofancontrol
-Restart=on-success
-RestartSec=3
+Restart=on-failure
 
 [Install]
 WantedBy=default.target
