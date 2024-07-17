@@ -19,7 +19,7 @@ NVIDIA Tesla M4, P4 or T4 GPU cards do not have an active cooling system and wer
 ### Hardware
 You need the following hardware:
 - Working **HP Proliant DL360 Gen9** or similar server. Maybe an old one from the out-of-service stack :-)
-- One or two **NVIDIA Tesla** M4, P4 or T4 (Check the available PCIe slots)
+- One or two **NVIDIA Tesla** M4, P4 or T4 (Check the available PCIe 3x16 slots)
 - (for model DL360Gen9 you need a **2nd riser card** to add a second NVIDIA Tesla - e.g. for 775420-001 / 764642-B21 ) 
 - **A short LAN wire** 
 - Some **duct tape** 
