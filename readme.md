@@ -52,7 +52,8 @@ Connect the LAN wire with the iLO and normal LAN interfaces.
 ### Software
 **Install:**
 - **Bare metal Linux e.g. Ubuntu 24 LTS**
-- e.g. **nvidia-utils-550** - NVIDIA Driver (apt-cache search nvidia-smi)
+- Kernel-Modules e.g. **linux-objects-nvidia-550-server-6.8.0-38-generic** oder the driver from NVIDIA homepage
+- e.g. **nvidia-utils-550** - NVIDIA Tools (apt-cache search nvidia-smi)
 - **sshpass** - Non-interactive ssh password authentication 
 
 **Then:**
