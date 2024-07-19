@@ -58,6 +58,11 @@ apt-get install nvidia-utils-550
 # This command should work 
 nvidia-smi 
 ```
+If you have a working configuration you maybe want to forbid the automatic update of this package:
+```
+apt-mark hold install nvidia-headless-550
+apt-mark hold install nvidia-utils-550
+```
 
 **Trouble shooting:**
 ```
