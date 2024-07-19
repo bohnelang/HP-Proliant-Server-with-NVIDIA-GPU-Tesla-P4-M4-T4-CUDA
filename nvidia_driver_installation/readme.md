@@ -34,12 +34,6 @@ Then run **update-initramfs -u**
 
 and **reboot**
 
-**Ubuntu only: Add a meta repository with NVIDIA drivers:**
-```
-add-apt-repository ppa:graphics-drivers/ppa --yes
-apt update
-```
-
 
 **With there two packages I could interface the two Tesla cards:**
 ```
