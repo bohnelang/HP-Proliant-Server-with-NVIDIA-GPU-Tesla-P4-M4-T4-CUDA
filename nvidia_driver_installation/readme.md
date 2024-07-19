@@ -70,5 +70,5 @@ cat /proc/driver/nvidia/version
 
 cat /var/log/dpkg.log|grep nvidia
 
-And start again from zero ...
+And start again from top ...
 ```
