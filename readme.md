@@ -52,25 +52,10 @@ Connect the LAN wire with the iLO and normal LAN interfaces.
 ### Software
 **Install:**
 - **Bare metal Linux e.g. Ubuntu 24 LTS**
-- Kernel-Modules e.g. **linux-modules-nvidia-550-server-open-6.8.0-38-generic** oder the driver from NVIDIA homepage
-- e.g. **nvidia-utils-550** - NVIDIA Tools (apt-cache search nvidia-smi)
-- **sshpass** - Non-interactive ssh password authentication 
+- [> Install NVIDIA Linux driver](nvidia_driver_installation/readme.md)
+- **sshpass** - Non-interactive ssh password authentication (apt-get install sshpass)
 
-**Then:**
-**Edit**/etc/modprobe.d/blacklist-nvidia.conf and add this lines:
-```
-blacklist vga16fb
-blacklist rivafb
-blacklist nvidiafb
-blacklist rivatv
-blacklist nouveau
-options nouveau modeset=0
-options nvidia NVreg_EnableGPUFirmware=0
-```
-Then run **update-initramfs -u**
-and **reboot**
-
-**Install recommended further Linux packages**
+**Install further recommended Linux packages**
 
 - **NVIDIA**
 - > **GPUstat** - pretty nvidia device monitor
