@@ -18,8 +18,8 @@ lsmod | grep nvidia
 # maybe you need to remove some packages manually
 dpkg -l | grep -i nvidia 
 ```
-** Then:
-Edit **/etc/modprobe.d/blacklist-nvidia.conf and add this lines:
+**Then:**
+**Edit**/etc/modprobe.d/blacklist-nvidia.conf and add this lines:
 ```
 blacklist vga16fb
 blacklist rivafb
