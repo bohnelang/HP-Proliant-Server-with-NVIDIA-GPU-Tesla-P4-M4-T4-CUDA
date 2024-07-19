@@ -35,7 +35,7 @@ Then run **update-initramfs -u**
 and **reboot**
 
 
-**With there two packages I could interface the two Tesla cards:**
+**With these two packages I could interface the two Tesla cards:**
 ```
 apt-cache search ^nvidia |  grep -i metapackage 
 
