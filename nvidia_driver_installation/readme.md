@@ -34,7 +34,7 @@ Then run **update-initramfs -u**
 
 and **reboot**
 
-**Ubuntu olny: Add a meta repository with NVIDIA drivers:**
+**Ubuntu only: Add a meta repository with NVIDIA drivers:**
 ```
 add-apt-repository ppa:graphics-drivers/ppa --yes
 apt update
@@ -60,8 +60,9 @@ nvidia-smi
 ```
 If you have a working configuration you maybe want to forbid the automatic update of this package:
 ```
-apt-mark hold install nvidia-headless-550
-apt-mark hold install nvidia-utils-550
+apt-mark hold nvidia-headless-550
+apt-mark hold nvidia-utils-550
+apt-mark hold nvidia-dkms-550
 ```
 
 **Trouble shooting:**
