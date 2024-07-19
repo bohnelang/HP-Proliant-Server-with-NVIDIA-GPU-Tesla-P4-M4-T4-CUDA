@@ -22,12 +22,12 @@ fi
 
 # Temp in celsius
 MINTEMP=40
-MAXTEMP=95
+MAXTEMP=90
 
 # Fan in percentage
 MINFAN=18
 MAXFAN=99
-STEP=4
+STEP=5
 
 LP=/var/run/fastfan
 
