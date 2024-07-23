@@ -14,7 +14,7 @@ It does not matter which iLO file you download (e.g. ilo4_277.bin.patched oder i
 
 ### Prepareing iLO
 - Set the IPv4 address, e.g. 192.168.1.3
-- Add a new user 'fan' with a new password that has the rigth to hardware (you can use an existing user as well)
+- Add a new user 'fan' with a new password that has the rigth to access hardware (you can use an existing user as well)
 
 ## Write the new iLO to ROM:
 There are different ways to flash the ILO. This is how I did it - all work was done in the server room with keyboard and a monitor connected to the server directly:
