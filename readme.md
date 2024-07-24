@@ -78,7 +78,7 @@ Connect the LAN wire with the iLO and normal LAN interfaces.
 
 - **Additional benchmark programs**
 - > OpenCL-Benchmark (https://github.com/ProjectPhysX/OpenCL-Benchmark)
-- > Geekbench 5 from https://www.geekbench.com/download/ (wget https://cdn.geekbench.com/Geekbench-5.4.1-Linux.tar.gz; tar xf Geekbench-5.4.1-Linux.tar.gz; cd Geekbench-5.4.1-Linux; ./geekbench5 or ./geekbench6  --gpu )
+- > Geekbench 5 from https://www.geekbench.com/download/ (wget https://cdn.geekbench.com/Geekbench-5.4.1-Linux.tar.gz; tar xf Geekbench-5.4.1-Linux.tar.gz; cd Geekbench-5.4.1-Linux; ./geekbench5 or ./geekbench5  --gpu )
 
 
 
