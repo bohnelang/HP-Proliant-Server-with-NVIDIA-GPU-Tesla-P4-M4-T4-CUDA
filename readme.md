@@ -1,4 +1,4 @@
-# A craft project: Building a small GPU server with a HP Proliant and passively cooled NVIDIA Tesla cards like M4, P4 or T4 
+# A craft project: Building a small GPU server with a HP Proliant and passively cooled NVIDIA Tesla cards like M4, P4, A2 or T4 
 ![Title](images/proliant_nvidia_tesla_800.jpg)
 
 
