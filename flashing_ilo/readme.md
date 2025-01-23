@@ -20,7 +20,7 @@ It does not matter which iLO file you download (e.g. ilo4_277.bin.patched oder i
 There are different ways to flash the ILO. This is how I did it - all work was done in the server room with keyboard and a monitor connected to the server directly:
 
 1. Install a bare metal Linux (e.g. Ubuntu 24 LTS) and boot the server
-2. Create a directory 'fash' in root's home
+2. Create a directory 'flash' in root's home
 3. Copy / upload the files flash_ilo4, ilo4_250.bin and CP027911.xml into the directory flash
 4. Shutdown the server
 4. Unplug the server from power
