@@ -315,6 +315,27 @@ Fan control with ipmi-sensors
 ## Discussion
 This project is a craft project, but in all it opens a nice way to run NVIDIA single slot Tesla cards in a 1U rack server. The original focus of the iLO ROM patch was to spin down the fans in order to silence them. In this project it is used to increase the fan speed to cool the passive GPU cards. In 2024 you can buy refurbished Tesla M4 cards for about 60$ and P4 cards for 120$ in internet shops. Maybe this is a nice and cheap start for PhD oder master students to get an own GPU server for KI training. Thanks to all those who enabled this iLO ROM that can control fan settings. Without this iLO ROM extension this project would not have been successful. It is a pity that there is no direct control of fan speed on HP Proliant Gen9 machines from Linux like in the fancontrol project. (Gen10 server with iLO 5 or up maybe can interface fan control by API.)
 
+## Specs
+NVIDIA Tesla M4 
+- CUDA Cores 1024
+- GPU Memory 4GB 
+- System Interface PCI Express 3.0
+- Maximum Power Consumption 70W
+
+NVIDIA Tesla P4 
+- CUDA Cores 2560
+- GPU Memory 8GB 
+- System Interface 	PCI Express 3.0
+- Maximum Power Consumption 70W
+
+PNY NVIDIA Tesla T4   
+- CUDA Cores 2560
+- Tensor Cores 320
+- GPU Memory 16GB GDDR6 
+- System Interface 	PCI Express 3.0
+- Maximum Power Consumption 70W
+
+
 
 ## Sources
 - https://github.com/kendallgoto/ilo4_unlock
@@ -327,4 +348,5 @@ This project is a craft project, but in all it opens a nice way to run NVIDIA si
 - https://pingtool.org/latest-hp-ilo-firmwares/
 - https://downloads.hpe.com/pub/softlib2/software1/sc-linux-fw-ilo/p192122427/v188589/CP046020.scexe
 - Gone: [https://files.tkrn.io/tkrn/ilo4/](https://web.archive.org/web/20250207115346/https://files.tkrn.io/tkrn/ilo4/
+
 
