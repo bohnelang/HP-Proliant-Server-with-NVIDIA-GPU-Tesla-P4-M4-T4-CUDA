@@ -330,10 +330,17 @@ NVIDIA Tesla P4
 
 NVIDIA Tesla A2 
 - CUDA Cores 1280
-- GPU Memory 16GB GDDR6 
 - Tensor Cores 40
+- GPU Memory 16GB GDDR6 
 - System Interface PCI Express 4.0
-- Maximum Power Consumption 65W
+- Maximum Power Consumption 70W
+
+NVIDIA Tesla L4 
+- CUDA Cores 7424
+- Tensor Cores 240
+- GPU Memory 24GB GDDR6 
+- System Interface PCI Express 4.0
+- Maximum Power Consumption 70W
 
 NVIDIA Tesla T4   
 - CUDA Cores 2560
@@ -355,6 +362,7 @@ NVIDIA Tesla T4
 - https://pingtool.org/latest-hp-ilo-firmwares/
 - https://downloads.hpe.com/pub/softlib2/software1/sc-linux-fw-ilo/p192122427/v188589/CP046020.scexe
 - Gone: [https://files.tkrn.io/tkrn/ilo4/](https://web.archive.org/web/20250207115346/https://files.tkrn.io/tkrn/ilo4/
+
 
 
 
